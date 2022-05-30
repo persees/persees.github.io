@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about
-order: 2
+order: 3
 ---
 
 <p style='text-align: justify;'>For the last years, I have been doing security audits to internal networks, websites and most recently to IoT devices. I have worked both on the private and public sector, including the Portugal Ministry of Internal Affairs. During that time i am/was also part of the multiple SOCs within the companies to help out with critical incident responses.</p>
