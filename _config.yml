@@ -31,6 +31,8 @@ github_username:  persees
 remote_theme: "mmistakes/minimal-mistakes@4.24.0" 
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
 
 minimal_mistakes_skin: "dark"
 
