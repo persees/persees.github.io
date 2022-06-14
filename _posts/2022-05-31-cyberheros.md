@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Cyber Heros"
 tags: writeup, tryhackme
 ---

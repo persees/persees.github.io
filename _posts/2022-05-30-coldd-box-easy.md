@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "ColddBox: Easy"
 tags: writeup, tryhackme
 ---
