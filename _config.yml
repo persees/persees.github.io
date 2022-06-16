@@ -31,6 +31,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/persees"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/tiago-ventura-098529182/"
 
 
 defaults:
@@ -48,3 +51,8 @@ search: true
 # search engine verifications
 google_site_verification: "oZU4zeLHY24FfT_tsL8EBB41Jbxdq9oNWNREXZpYjl0"
 
+analytics:
+    provider: "google-gtag"
+    google:
+        tracking_id: "G-XVYRWVR5H0"
+        anonymize_ip: false # default
