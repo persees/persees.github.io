@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-paginate
+  - jekyll-time-to-read
 
 minimal_mistakes_skin: "dark"
 
