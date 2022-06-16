@@ -41,5 +41,10 @@ defaults:
     values:
       author_profile: true
       show_date: true
-      breadcrumbs: true
+      read_time: true
+
+search: true
+
+# search engine verifications
+google_site_verification: "oZU4zeLHY24FfT_tsL8EBB41Jbxdq9oNWNREXZpYjl0"
 
