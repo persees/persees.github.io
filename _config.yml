@@ -37,24 +37,18 @@ author:
 
 
 defaults:
+  # all
+  - scope:
+      path: ""
+    values:
+      author_profile: true
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      author_profile: true
       show_date: true
       read_time: true
-  - scope:
-      path: ""
-      type: single
-    values:
-      author_profile: true
-  - scope:
-      path: ""
-      type: home
-    values:
-      author_profile: true
         
 
 search: true
