@@ -18,23 +18,19 @@ plugins:
 minimal_mistakes_skin: "dark"
 
 author:
-  name: "Your Name"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person." # Note: Markdown is allowed
-  location: "Somewhere"
+  name: "perses"
+  avatar: ""
+  bio: "Just a random guy blogging" # Note: Markdown is allowed
   links:
-    - label: "Made Mistakes"
+    - label: "Blog"
       icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
+      url: "https://persees.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
+      url: "https://twitter.com/21perses"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+      url: "https://github.com/persees"
 
 
 defaults:
