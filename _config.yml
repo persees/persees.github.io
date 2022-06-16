@@ -19,7 +19,7 @@ minimal_mistakes_skin: "dark"
 
 author:
   name: "perses"
-  avatar: ""
+  avatar: "/assets/images/sleep_glasses.png"
   bio: "Just a random guy blogging" # Note: Markdown is allowed
   links:
     - label: "Blog"
@@ -45,6 +45,11 @@ defaults:
       author_profile: true
       show_date: true
       read_time: true
+  - scope:
+      path: ""
+      type: default
+    values:
+      author_profile: true
 
 search: true
 
