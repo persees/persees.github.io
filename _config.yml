@@ -50,6 +50,12 @@ defaults:
       type: default
     values:
       author_profile: true
+  - scope:
+      path: ""
+      type: home
+    values:
+      author_profile: true
+        
 
 search: true
 
