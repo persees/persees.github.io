@@ -47,7 +47,7 @@ defaults:
       read_time: true
   - scope:
       path: ""
-      type: default
+      type: about
     values:
       author_profile: true
   - scope:
