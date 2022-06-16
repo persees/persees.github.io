@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "Home"
-    url: /index.md
+    url: /index
   - title: "Posts"
-    url: /posts.md
+    url: /posts
   - title: "About"
-    url: /about.md
+    url: /about
