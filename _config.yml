@@ -14,6 +14,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-time-to-read
+  - jekyll-seo-tag  
 
 minimal_mistakes_skin: "dark"
 
