@@ -15,7 +15,6 @@ plugins:
   - jekyll-paginate
   - jekyll-time-to-read
   - jekyll-seo-tag
-  - jekyll-archives
 
 minimal_mistakes_skin: "dark"
 
