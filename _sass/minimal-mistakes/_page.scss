@@ -113,8 +113,9 @@ body {
 
   /* paragraph indents */
   p {
+    font-size: $type-size-6
     margin: 0 0 $indent-var;
-
+    
     /* sibling indentation*/
     @if $paragraph-indent == true {
       & + p {
