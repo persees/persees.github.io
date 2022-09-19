@@ -14,7 +14,8 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-time-to-read
-  - jekyll-seo-tag  
+  - jekyll-seo-tag
+  - jekyll-archives
 
 minimal_mistakes_skin: "dark"
 
@@ -62,3 +63,20 @@ analytics:
     google:
         tracking_id: "G-XVYRWVR5H0"
         anonymize_ip: false # default
+
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
