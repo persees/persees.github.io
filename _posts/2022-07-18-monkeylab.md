@@ -1,7 +1,8 @@
 ---
 layout: posts
 title: "HTB Business - MonkeyLab"
-tags: writeup, hackthebox, ctf
+tags: writeup hackthebox ctf
+categories: HackTheBox
 ---
 
 This is an "easy" machine from [HackTheBox Business CTF](https://www.hackthebox.com/events/htb-business-ctf-2022).

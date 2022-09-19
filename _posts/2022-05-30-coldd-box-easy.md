@@ -1,7 +1,8 @@
 ---
 layout: posts
 title: "ColddBox: Easy"
-tags: writeup, tryhackme
+tags: writeup tryhackme
+categories: TryHackMe
 ---
 
 This is an easy machine from [TryHackMe](https://tryhackme.com/room/colddboxeasy).
