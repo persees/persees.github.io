@@ -9,9 +9,9 @@ TP-Link WR740N suffers from a few stored XSS vulnerabilities.
 
 <p style='text-align: justify;'>
 This is a demonstration of a few XSS vulnerabilities present in TP-Link WR740N. It is possible to inject Javascript code by adding crafted descriptions onto the MAC Filtering tab and the target descriptions from Access Control tab.
-</br>
-Other PoCs exist but they don’t actually allow for the injection of Javascript code: https://www.exploitdb.com/exploits/43148
-</br>
+<br>
+Other PoCs exist but they don’t actually allow for the injection of Javascript code: [ExploidDB](https://www.exploit-db.com/exploits/43148)
+<br>
 This is a PoC to demonstrate that is actually possible to inject script tags within the MAC description that leads to store XSS.
 </p>
 
